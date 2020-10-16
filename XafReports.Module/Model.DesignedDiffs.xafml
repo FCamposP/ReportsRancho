@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="XafReports">
+  <BOModel>
+    <Class Name="XafReports.Module.BusinessObjects.Business.DetalleVenta" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.Business.Turno" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.Business.Venta" IsVisibleInReports="True" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="@7702dad4-dd02-4672-a90f-795e6659ccdd" Caption="Configuraciones" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@0a7c079f-2e96-4088-98ca-26aeb1d514e2" ViewId="Entidad_ListView" IsNewNode="True" />
+          <Item Id="@1a0f366e-9c04-47e8-82fb-53fd396b76b3" ViewId="Venta_ListView" IsNewNode="True" />
+          <Item Id="@28f077af-471e-443e-b17d-da30cbb35089" ViewId="Usuario_ListView" IsNewNode="True" />
+          <Item Id="@6174371f-682a-40a0-aaf6-9058836f31fb" ViewId="Empleado_ListView" IsNewNode="True" />
+          <Item Id="@6511f9b3-1675-47e0-828c-18e0a8e38a82" ViewId="CobroPendiente_ListView" IsNewNode="True" />
+          <Item Id="@8172b88d-6737-4e10-9423-c0d623327f18" ViewId="Sucursal_ListView" IsNewNode="True" />
+          <Item Id="@9feac136-c9b9-431b-8d38-4dc5b8468c1b" ViewId="TipoDocumento_ListView" IsNewNode="True" />
+          <Item Id="@a65a2447-ec1b-455f-b7b9-fc641dde60ac" ViewId="UnidadOrganizativa_ListView" IsNewNode="True" />
+          <Item Id="@ac02daa0-a434-4ba5-9934-8fa1227127d4" ViewId="RangoDocumento_ListView" IsNewNode="True" />
+          <Item Id="@b6679fca-86c5-4a37-9560-764fc4670f53" ViewId="Articulo_ListView" IsNewNode="True" />
+          <Item Id="@ebd37f96-cce6-48c0-bbd2-d9c2627a890d" ViewId="FormaDePago_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="19.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XafReports.Module</RootNamespace>
+    <AssemblyName>XafReports.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="mscorlib">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\BusinessPlusCode\AccesorioEquipamiento.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\AccesorioEquipamiento.Designer.cs">
+      <DependentUpon>AccesorioEquipamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\AccesorioHabitacion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\AccesorioHabitacion.Designer.cs">
+      <DependentUpon>AccesorioHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\AccesorioVehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\AccesorioVehiculo.Designer.cs">
+      <DependentUpon>AccesorioVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\AnulacionCobro.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\AnulacionCobro.Designer.cs">
+      <DependentUpon>AnulacionCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Articulo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Articulo.Designer.cs">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\AsignacionUsuarioLimpieza.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\AsignacionUsuarioLimpieza.Designer.cs">
+      <DependentUpon>AsignacionUsuarioLimpieza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\CategoriaArticulo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\CategoriaArticulo.Designer.cs">
+      <DependentUpon>CategoriaArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Ciudad.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Ciudad.Designer.cs">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ClaseCliente.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ClaseCliente.Designer.cs">
+      <DependentUpon>ClaseCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\CobroPendiente.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\CobroPendiente.Designer.cs">
+      <DependentUpon>CobroPendiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ComandasTurno.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ComandasTurno.Designer.cs">
+      <DependentUpon>ComandasTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ComandasVendidasTurno.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ComandasVendidasTurno.Designer.cs">
+      <DependentUpon>ComandasVendidasTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\CorteDeCaja.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\CorteDeCaja.Designer.cs">
+      <DependentUpon>CorteDeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\CuentaServicios.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\CuentaServicios.Designer.cs">
+      <DependentUpon>CuentaServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Customer.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\DetalleCobros.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\DetalleCobros.Designer.cs">
+      <DependentUpon>DetalleCobros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\DetallePago.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\DetallePago.Designer.cs">
+      <DependentUpon>DetallePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\DetalleVenta.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\DetalleVenta.Designer.cs">
+      <DependentUpon>DetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Direccion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Direccion.Designer.cs">
+      <DependentUpon>Direccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Empleado.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Empresa.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Empresa.Designer.cs">
+      <DependentUpon>Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Entidad.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Entidad.Designer.cs">
+      <DependentUpon>Entidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Estado.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Estado.Designer.cs">
+      <DependentUpon>Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\EstadoHabitacion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\EstadoHabitacion.Designer.cs">
+      <DependentUpon>EstadoHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\FormaDePago.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\FormaDePago.Designer.cs">
+      <DependentUpon>FormaDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Habitacion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Habitacion.Designer.cs">
+      <DependentUpon>Habitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Hotel.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Hotel.Designer.cs">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Mueble.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Mueble.Designer.cs">
+      <DependentUpon>Mueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Order.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Pais.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Pais.Designer.cs">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\PreciosTarifas.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\PreciosTarifas.Designer.cs">
+      <DependentUpon>PreciosTarifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\PromocionHotel.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\PromocionHotel.Designer.cs">
+      <DependentUpon>PromocionHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\RangoDocumento.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\RangoDocumento.Designer.cs">
+      <DependentUpon>RangoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\RentaVehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\RentaVehiculo.Designer.cs">
+      <DependentUpon>RentaVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReporteCxcEmpleado.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReporteCxcEmpleado.Designer.cs">
+      <DependentUpon>ReporteCxcEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReporteTurnos.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReporteTurnos.Designer.cs">
+      <DependentUpon>ReporteTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionHabitacion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionHabitacion.Designer.cs">
+      <DependentUpon>ReservacionHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionHotel.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionHotel.Designer.cs">
+      <DependentUpon>ReservacionHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionTarifas.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionTarifas.Designer.cs">
+      <DependentUpon>ReservacionTarifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionTarifasReservacionTarifasCollection_HabitacionHabitacionCollection.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionTarifasReservacionTarifasCollection_HabitacionHabitacionCollection.Designer.cs">
+      <DependentUpon>ReservacionTarifasReservacionTarifasCollection_HabitacionHabitacionCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionVehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ReservacionVehiculo.Designer.cs">
+      <DependentUpon>ReservacionVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Roles.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServicioAdicional.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServicioAdicional.Designer.cs">
+      <DependentUpon>ServicioAdicional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServicioExtraReservacionHotel.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServicioExtraReservacionHotel.Designer.cs">
+      <DependentUpon>ServicioExtraReservacionHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServicioExtraVehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServicioExtraVehiculo.Designer.cs">
+      <DependentUpon>ServicioExtraVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServiciosHabitaciones.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\ServiciosHabitaciones.Designer.cs">
+      <DependentUpon>ServiciosHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Sesiones.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Sesiones.Designer.cs">
+      <DependentUpon>Sesiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Sucursal.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Sucursal.Designer.cs">
+      <DependentUpon>Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifaHabitacion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifaHabitacion.Designer.cs">
+      <DependentUpon>TarifaHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifaPromocion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifaPromocion.Designer.cs">
+      <DependentUpon>TarifaPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifasVehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifasVehiculo.Designer.cs">
+      <DependentUpon>TarifasVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifaVehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TarifaVehiculo.Designer.cs">
+      <DependentUpon>TarifaVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TipoDocumento.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TipoDocumento.Designer.cs">
+      <DependentUpon>TipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TipoHabitacion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TipoHabitacion.Designer.cs">
+      <DependentUpon>TipoHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\TipoImpuesto.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\TipoImpuesto.Designer.cs">
+      <DependentUpon>TipoImpuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Transaccion.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Transaccion.Designer.cs">
+      <DependentUpon>Transaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Turno.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Turno.Designer.cs">
+      <DependentUpon>Turno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\UnidadMedida.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\UnidadMedida.Designer.cs">
+      <DependentUpon>UnidadMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\UnidadOrganizativa.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\UnidadOrganizativa.Designer.cs">
+      <DependentUpon>UnidadOrganizativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Usuario.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Vehiculo.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Vehiculo.Designer.cs">
+      <DependentUpon>Vehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\VehiculoVehiculos_AccesorioVehiculoAccesorioVehiculoCollection.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\VehiculoVehiculos_AccesorioVehiculoAccesorioVehiculoCollection.Designer.cs">
+      <DependentUpon>VehiculoVehiculos_AccesorioVehiculoAccesorioVehiculoCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BusinessPlusCode\Venta.cs" />
+    <Compile Include="BusinessObjects\BusinessPlusCode\Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\Enums.cs" />
+    <Compile Include="BusinessObjects\NumLetra.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BusinessObjects\BusinessPlus.xpo" />
+    <None Include="BusinessObjects\BusinessPlus.xpo.diagram">
+      <DependentUpon>BusinessPlus.xpo</DependentUpon>
+    </None>
+    <None Include="BusinessObjects\ReadMe.txt" />
+    <None Include="Controllers\ReadMe.txt" />
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+    <None Include="Images\ReadMe.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\config.xml" />
+    <None Include="FunctionalTests\sample.ets" />
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Welcome.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

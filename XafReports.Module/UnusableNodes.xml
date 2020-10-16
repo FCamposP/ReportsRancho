@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.CobroPendiente" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.ComandasVendidasTurno" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.CorteDeCaja" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.CuentaServicios" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.ReporteCxcEmpleado" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.ReservacionHotel" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.ReservacionVehiculo" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.Turno" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.Vehiculo" IsVisibleInReports="True" />
+    <Class Name="XafReports.Module.BusinessObjects.BusinessPlus.Venta" IsVisibleInReports="True" />
+  </BOModel>
+</Application>
